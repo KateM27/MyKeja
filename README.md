@@ -14,7 +14,7 @@ USE mykeja;
 
 CREATE TABLE tenants (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  Phone_number INT NOT NULL,
+  phone_number INT NOT NULL,
   name VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL
 );
