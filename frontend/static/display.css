@@ -1,34 +1,8 @@
-*{
-    /* margin: 0;
-    padding: 0; */
-    box-sizing: border-box;
-}
-
-body{
-    font-size: 1rem;
-    font-family: sans-serif;
-}
-
-/* 
-p{
-    background-color:lightgray;
-}
- */
- 
-/* inline elements */
-.opposite{
-    display: inline-block;
-    background-color: black;
-    color: whitesmoke;
-    margin-top: 20px;
-    padding: 1rem;
-}
-
 nav ul{
     list-style-type: none;
     padding: 0.5rem;
     text-align: right;
-    background-color: rgba(0, 0, 0, 0.26);
+    font-size: 2em;
 }
 
 li{

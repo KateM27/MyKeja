@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename='display.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" href="/frontend/static/global.css">
+    <link rel="stylesheet" href="/frontend/static/display.css">
 </head>
     
 <header>
@@ -36,7 +38,7 @@
         </ul>
     </nav> -->
     
-    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    <!-- {% with messages = get_flashed_messages(with_categories=true) %} {% if
         messages %} {% for category, message in messages %} {% if category ==
         'error' %}
         <div class="alert alert-danger alter-dismissable fade show" role="alert">
@@ -52,20 +54,20 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        {% endif %} {% endfor %} {% endif %} {% endwith %}
+        {% endif %} {% endfor %} {% endif %} {% endwith %} -->
 
 </header>
 <body>
-    <h1 style="text-align:center;">login</h1>
-    <section style="text-align: center;" class="container">
-        <legend>sign up</legend>
+    <h1 style="text-align:center;">MyKeja</h1>
+    <section style="text-align: center;" class="loginbox">
+        <legend>login</legend>
         <form method="post" class="form-container">
             <P>
-                <LAbel for="email">email</LAbel>
+                <LAbel for="email"></LAbel>
                 <input type="text" name ="email" id="email" placeholder="enter email">
             </P>
             <p>
-                <label for="password1">password:</label>
+                <label for="password1"></label>
                 <input type="password" name="password1" id="password" placeholder="enter password"> 
             </p>
 
