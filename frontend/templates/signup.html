@@ -5,52 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup</title>
-    <!-- <link rel="stylesheet" href="/flask/website/static/css/global.css">
-    <link rel="stylesheet" href="/flask/website/static/css/display.css"> -->
+    <link rel="stylesheet" href="/frontend/static/display.css">
+    <link rel="stylesheet" href="/frontend/static/global.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='display.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
 </head>
     
 <header>
-    <!-- <nav>
-        <ul>
-            <li>
-                <a id="home" href="home">home</a>
-            </li>
-            <li>
-                <a id="signup" href="signup">signup</a>
-            </li>
-            <li>
-                <a id="logout" href="logout">logout</a>
-            </li>
-        </ul>
-    </nav> -->
+<!--     {% with messages = get_flashed_messages(with_categories=true) %} {% if
+        messages %} {% for category, message in messages %} {% if category ==
+        'error' %}
+        <div class="alert alert-danger alter-dismissable fade show" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% else %}
+        <div class="alert alert-success alter-dismissable fade show" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+    {% endif %} {% endfor %} {% endif %} {% endwith %}
+ -->
 </header>
 <body>
-    <h1 style="text-align: center">welcome</h1>
-    <section style="text-align: center;" >
+<!--   <div class="cropped">
+    <img src="{{ url_for('static', filename='mykeja_logo.png') }}" alt="mykeja logo" height="100px" width="100px">
+  </div>
+ -->    <h1 style="text-align: center">MyKeja</h1>
+    <section style="text-align: center;" class="loginbox" >
         <legend>sign up</legend>
-        <form action="post">
+        <form method="post" class="form-container">
             <p>
-                <label for="firstName">firstName:</label>
+                <label for="firstName"></label>
                 <input type="text" name="firstName" id="firstName" placeholder="first name" autocomplete="on" required>
             </p>
             <p>
-                <label for="secondName">surname:</label>
-                <input type="text" name="secondName" id="secondName" placeholder="secondname">
+                <label for="secondName"></label>
+                <input type="text" name="secondName" id="secondName" placeholder="second name">
             </p>
             <P>
-                <LAbel for="email">email</LAbel>
+                <label for="email"></label>
                 <input type="text" name ="email" id="email" placeholder="enter email">
             </P>
             <p>
-                <label for="password1">password:</label>
-                <input type="password" name="password1" id="password" placeholder="enter password"> 
+                <label for="password1"></label>
+                <input type="password" name="password1" id="password1" placeholder="enter password"> 
             </p>
             <p>
-                <label for="password">confirm:</label>
-                <input type="password" name="password" id="password" placeholder="confirm password"> 
+                <label for="password2"></label>
+                <input type="password" name="password2" id="password2" placeholder="confirm password"> 
             </p>
 
-            <button type="submit">sign up</button>
+            <button type="submit" class="button">sign up</button>
         </form>
     </section>
 </body>

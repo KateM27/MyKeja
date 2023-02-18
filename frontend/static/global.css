@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background: linear-gradient( 150deg,#1e293f8e, #283655);
+    border: solid;
+    height: 100vh;
+}
+
+h1{
+    color: white;
+}
+.loginbox {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 1em;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.404), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 400px;
+    min-height: 480px;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
+.form-container {
+    position: absolute;
+    top: 100px;
+    bottom: 20px;
+    height: 75%;
+    left: 60px;
+    width: 75%;
+    background-color: #28365500;
+    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.404), 10px 10px 10px rgba(255, 0, 0, 0.22);
+    }
+
+input {
+    background-color: #afb7ccd2;
+    border: none;
+    padding: 1em;
+    margin: 7px 0;
+    width: 80%;
+    margin-top: 10px;
+    
+}
+
+input:hover{
+    border-bottom: solid 2px whitesmoke;
+    transition: 1s;
+}
+
+legend{
+    color: white;
+    font-size: 3em;
+    margin-top: 20px;
+    
+}
+
+.button {
+    background-color: #28365500; /* Green */
+    border: solid rgba(0, 0, 0, 0.514) 1px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .button:hover{
+    border: solid black 1px;
+    background-color: #283655;
+    transition: 1s;
+
+  }
+
+  .cropped {
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden;
+    border: 5px solid black;
+    }
+    
+    .cropped img {
+    margin: -10px 0px 0px -180px;
+    }
