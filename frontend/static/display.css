@@ -1,8 +1,98 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+img{
+    position: relative;
+    margin-right: auto;
+}
+
+.logo{
+  max-width: 100%;
+  height: auto;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.about{
+    text-align: center;
+    width: 80%;
+    height: auto;
+}
+
+.block{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.features h2{
+    height: 20%;
+}
+.features h3{
+    font-size:20px;
+    font-weight: 800;
+
+}
+
+.manage{
+width: 30%;
+
+}
+
+.manage p{
+    width: 80%;
+    padding: 5%;
+    position: relative;
+    left: 11%;
+    font-size: 12px;
+}
+.hakiba{
+    width: 30%;
+}
+
+.hakiba p{
+    width: 80%;
+    padding: 5%;
+    position: relative;
+    left: 11%;
+    font-size: 12px;
+}
+
+.contacts{
+    background-color: #DFC13F;
+    padding: 10px;
+}
+.contacts h2{
+    text-align: center;
+}
+
+nav{
+    height: auto;
+}
+
 nav ul{
     list-style-type: none;
     padding: 0.5rem;
     text-align: right;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 li{
@@ -17,6 +107,9 @@ li a{
 
 li a:hover, li a:focus {
     text-decoration: underline;
-    color: white;
+    color: #DFC13F;
 }
 
+
+
+/* colors #DFC13F #A95534 */
