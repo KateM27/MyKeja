@@ -24,38 +24,6 @@
 </head>
     
 <header>
-    <!-- <nav>
-        <ul>
-            <li>
-                <a id="home" href="home">home</a>
-            </li>
-            <li>
-                <a id="signup" href="signup">signup</a>
-            </li>
-            <li>
-                <a id="logout" href="logout">logout</a>
-            </li>
-        </ul>
-    </nav> -->
-    
-    <!-- {% with messages = get_flashed_messages(with_categories=true) %} {% if
-        messages %} {% for category, message in messages %} {% if category ==
-        'error' %}
-        <div class="alert alert-danger alter-dismissable fade show" role="alert">
-          {{ message }}
-          <button type="button" class="close" data-dismiss="alert">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        {% else %}
-        <div class="alert alert-success alter-dismissable fade show" role="alert">
-          {{ message }}
-          <button type="button" class="close" data-dismiss="alert">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        {% endif %} {% endfor %} {% endif %} {% endwith %} -->
-
 </header>
 <body>
     <h1 style="text-align:center;">MyKeja</h1>
@@ -70,10 +38,10 @@
                 <label for="password1"></label>
                 <input type="password" name="password1" id="password" placeholder="enter password"> 
             </p>
-
+            <p>don't have an account? <a id="signup" href="signup">signup</a>
+            
             <button type="submit" class="button">login</button>
         </form>
-        <p>don't have an account? <a id="signup" href="signup">signup</a>
     </section>
 
 </body>
