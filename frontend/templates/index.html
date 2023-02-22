@@ -20,12 +20,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
     <link rel="stylesheet" href="/frontend/static/global.css">
     <link rel="stylesheet" href="/frontend//static/display.css">
-    <link rel="icon" href="{{ url_for('static', filename='mykejaweb_50px.png') }}">
+    <link rel="icon" href="{{ url_for('static', filename='7-removebg-preview.png') }}">
     <link rel="icon" href="/frontend/static/7-removebg-preview.png">
 </head>
 <header>
 <!--     <img src="{{ url_for('static', filename='mykejaweb_logo.png') }}" alt="">-->    
-<img src="/frontend/static/6-removebg-preview.png" alt="mykeja_logo" width="100" height="100" class="logo">
+<img src="{{url_for('static', filename='6-removebg-preview.png')}}" alt="mykeja_logo" width="100" height="100" class="logo">
+<!-- <img src="/frontend/static/6-removebg-preview.png" alt="mykeja_logo" width="100" height="100" class="logo">
+ -->
     <nav>
         <ul>
             <li>
@@ -48,12 +50,16 @@
         <h2>features</h2>
         <div class="features">
             <div class="manage" id="manage apartments">
-                <img src="/frontend/static/icons8-asset-management-64.png" alt="management icon">
+<!--                 <img src="/frontend/static/icons8-asset-management-64.png" alt="management icon">
+ -->                <img src="{{url_for('static', filename='icons8-asset-management-64.png')}}" alt="management icon">
+
                 <h3>manage apartments</h3>
                 <p>this is created for landlords who have more that one apartments they are managing. they will be able to create new apartments and add their tenants and caretakers</p>
             </div>
             <div class="hakiba" id="hakiba pay">
-                <img src="/frontend/static/icons8-savings-66.png" alt="savings icon">
+<!--                 <img src="/frontend/static/icons8-savings-66.png" alt="savings icon">
+ -->                <img src="{{url_for('static', filename='icons8-savings-66.png')}}" alt="savings icon">
+
                 <h3>hakiba pay</h3>
                 <p>
                     haba na haba hujaza kibaba. this is feature is designed to track payment information. especially in small amount. it will be accessible to all parties and will show payment progress. 
