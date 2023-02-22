@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {background-color: beige;}
+            h1 {text-align: center;}
+            h1 {color: brown;}
+        </style>
+        <title>MyKeja</title>
+    </head>
+    <body>
+        <h1>Welcome to MyKeja</h1>
+        <h3>Tenants</h3>
+	    <a href="/add_tenant">ADD</a>
+	    <br>
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </thead>
+            {% for data in tenants %}
+            <tbody>
+                <td>{{data.id}}</td>
+                <td>{{data.name}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.phone}}</td>
+                <td><a href="/delete/{{data.id}}" type="button">Delete</a></td>
+            </tbody>
+            {% endfor%}
+        </table>
+    </body>
+</html>
