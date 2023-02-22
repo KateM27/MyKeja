@@ -1,3 +1,5 @@
 mykeja
 __pycache__
 .mykeja
+
+*.db
