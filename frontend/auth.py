@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
+from mykeja import db, User
 
 auth = Blueprint('auth', __name__)
 
@@ -15,11 +16,11 @@ tenants = {}
 # Caretaker information
 caretakers = {}
 
-""" @auth.route('/login', methods=['GET', 'POST'])
-def login():
-    data = request.form
-    print(data)
-    return render_template('login.html') """
+# @auth.route('/login', methods=['GET', 'POST'])
+# def login():
+#     data = request.form
+#     print(data)
+#     return render_template('login.html')
 
 
 @auth.route('/signup', methods=['GET', 'POST'])
@@ -30,15 +31,18 @@ def sign_up():
         surname = request.form.get('secondName')
         password1 = request.form.get('password1')
         password2 = request.form.get('password2')
+        u = User(email=email, firstname=firstname, surname=surname, password=password1)
+        db.session.add(u)
+        db.session.commit()
 
         if len(firstname) < 2:
-             flash('first name must be greeter than 1 characters', category='error')
+             flash('first name must be greater than 1 characters', category='error')
         elif len(surname) < 2:
-             flash('second name must be greeter than 1 characters', category='error')
+             flash('second name must be greater than 1 characters', category='error')
         elif len(email) < 4:
-            flash('email must be greeter than 4 characters', category='error')
+            flash('email must be greater than 4 characters', category='error')
         elif password1 != password2:
-             flash('password don\'t match', category='error')
+             flash('passwords don\'t match', category='error')
         elif len(password1) < 7:
              flash('password must be 8 characters', category='error')
         else:

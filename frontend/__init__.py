@@ -1,19 +1,19 @@
-from flask import Flask
+# from flask import Flask
+from mykeja import app
 
-def create_app():
-    app = Flask(__name__,)
-
-    app.config['SECRET_KEY'] = 'tomato'
-
-
-    from .views import views
-    from .auth import auth
+# def create_app():
+#     app = Flask(__name__)
 
 
-    # registration of blueprint.
-    app.register_blueprint(views, url_prefix='/')
-    app.register_blueprint(auth, url_prefix='/')
+app.config['SECRET_KEY'] = 'tomato'
 
-    
-    return app
+from .views import views
+from .auth import auth
+
+
+# registration of blueprint.
+app.register_blueprint(views, url_prefix='/')
+app.register_blueprint(auth, url_prefix='/')
+
+# return app
     

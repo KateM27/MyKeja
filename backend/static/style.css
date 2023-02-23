@@ -61,7 +61,7 @@ li {
     background-color: #f2f2f2;
 }
 
-a {
+/* a {
     text-decoration: none;
     color: red;
     cursor: pointer;
@@ -69,5 +69,5 @@ a {
 
 a:hover {
     opacity: 0.8;
-}
+} */
   

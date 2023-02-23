@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 # from routes import *
 
 app = Flask(__name__)
+# CORS (app)
 
 # adding configuration for using a sqlite database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mykeja.db'
