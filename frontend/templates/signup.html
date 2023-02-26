@@ -14,10 +14,13 @@
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             {% for msg in messages%}
-                <p> {{msg}} </p>
+                <p class="flashes"> {{msg}} </p>
             {% endfor%}
         {% endif %}
     {% endwith %}
+    <script src="/frontend/static/flashes.js"></script>
+    <script src="{{ url_for('static', filename='flashes.js') }}"></script>
+
 </header>
 <body>
    <h1 style="text-align: center">MyKeja</h1>

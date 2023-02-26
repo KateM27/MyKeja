@@ -6,8 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/frontend/static/landlord.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='display.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" href="/frontend/static/global.css">
+    <link rel="stylesheet" href="/frontend//static/display.css">
+    <link rel="icon" href="{{ url_for('static', filename='mykejaweb_50px.png') }}">
+    <link rel="icon" href="/frontend/static/7-removebg-preview.png">
 </head>
+
+<header class="header">
+<img src="/frontend/static/6-removebg-preview.png" alt="mykeja_logo" width="100" height="100" class="logo">
+   
+    <nav>
+        <ul>
+            <li>
+                <a id="logout" href="logout">logout</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 <body>
-<h1>landlord view</h1>
+    <p>
+        this is what the landlord will see.
+    </p>
 </body>
 </html>

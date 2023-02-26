@@ -1,9 +1,33 @@
-header{
+.header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
 }
+
+.flashes{
+    background-color: #eed97d;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    animation: pop-in-out 0.5s ease-in-out;
+}
+
+@keyframes pop-in-out {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 img{
     position: relative;
