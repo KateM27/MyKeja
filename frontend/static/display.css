@@ -1,9 +1,34 @@
-header{
+.header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
 }
+
+.flashes{
+    background-color: #eed97d;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    animation: pop-in-out 0.5s ease-in-out;
+}
+
+@keyframes pop-in-out {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
 img{
     position: relative;
     margin-right: auto;
@@ -12,6 +37,14 @@ img{
 .logo{
   max-width: 100%;
   height: auto;
+}
+
+.display{
+    background-color: #dfc23f;
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 section{
@@ -53,32 +86,35 @@ section{
 }
 
 .manage{
-width: 30%;
-
+width: 20%;
+margin: 10px;
+background-color: #DFC13F;
 }
 
 .manage p{
     width: 80%;
-    padding: 5%;
     position: relative;
     left: 11%;
     font-size: 12px;
 }
 .hakiba{
-    width: 30%;
+    width: 20%;
+    margin: 10px;
+    background-color: #DFC13F;
 }
 
 .hakiba p{
     width: 80%;
-    padding: 5%;
+    
     position: relative;
     left: 11%;
     font-size: 12px;
 }
 
 .contacts{
-    background-color: #DFC13F;
+    background-color: black;
     padding: 10px;
+    color: #DFC13F;
 }
 .contacts h2{
     text-align: center;

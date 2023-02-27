@@ -1,4 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for
+from flask_login import login_required, current_user 
+
+
 
 views = Blueprint('views', __name__)
 
@@ -6,6 +9,7 @@ views = Blueprint('views', __name__)
 def home():
     return render_template("index.html")
     
-@views.route('landlordview.html')
+@views.route('/dashboard')
+@login_required
 def lordview():
     return render_template("landlordview.html")

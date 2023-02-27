@@ -5,17 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      crossorigin="anonymous"
-    />
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='display.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
     <link rel="stylesheet" href="/frontend/static/global.css">
@@ -23,7 +13,7 @@
     <link rel="icon" href="{{ url_for('static', filename='7-removebg-preview.png') }}">
     <link rel="icon" href="/frontend/static/7-removebg-preview.png">
 </head>
-<header>
+<header class="header">
 <!--     <img src="{{ url_for('static', filename='mykejaweb_logo.png') }}" alt="">-->    
 <img src="{{url_for('static', filename='6-removebg-preview.png')}}" alt="mykeja_logo" width="100" height="100" class="logo">
 <!-- <img src="/frontend/static/6-removebg-preview.png" alt="mykeja_logo" width="100" height="100" class="logo">
@@ -41,6 +31,9 @@
 
 </header>
 <body>
+<div class="display">
+<p>my display stuff</p>
+</div>
 <section>
     <article class="about">
         <h2>about</h2>
@@ -65,8 +58,6 @@
                     Haba na haba hujaza kibaba. This feature is designed to track payment information especially in small amounts. It will be accessible to all parties and will show the payment progress of tenants. 
                 </p>
             </div>
-        </div>
-        
     </article>
 </section>
 <footer class="contacts">

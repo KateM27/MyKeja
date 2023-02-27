@@ -24,6 +24,17 @@
 </head>
     
 <header>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages%}
+            <p class="flashes"> {{msg}} </p>
+        {% endfor%}
+    {% endif %}
+{% endwith %}
+<div class="header">
+    
+
+</div>
 </header>
 <body>
     <h1 style="text-align:center;">MyKeja</h1>
