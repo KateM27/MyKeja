@@ -146,6 +146,11 @@ li a:hover, li a:focus {
     color: #DFC13F;
 }
 
-
+.social-links {
+    float: center;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
 
 /* colors #DFC13F #A95534 */

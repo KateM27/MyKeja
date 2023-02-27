@@ -14,8 +14,10 @@
     <link rel="icon" href="/frontend/static/7-removebg-preview.png">
 </head>
 <header class="header">
-<!--     <img src="{{ url_for('static', filename='mykejaweb_logo.png') }}" alt="">-->
-<img src="/frontend/static/6-removebg-preview.png" alt="mykeja_logo" width="100" height="100" class="logo">
+<!--     <img src="{{ url_for('static', filename='mykejaweb_logo.png') }}" alt="">-->    
+<img src="{{url_for('static', filename='6-removebg-preview.png')}}" alt="mykeja_logo" width="100" height="100" class="logo">
+<!-- <img src="/frontend/static/6-removebg-preview.png" alt="mykeja_logo" width="100" height="100" class="logo">
+ -->
     <nav>
         <ul>
             <li>
@@ -23,6 +25,10 @@
             </li>
             <li>
                 <a id="login" href="login">login</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/KateM27/MyKeja/" aria-label="Watch KateM27/MyKeja on GitHub">Project</a>
+                <script async defer src="https://buttons.github.io/buttons.js"></script>
             </li>
         </ul>
     </nav>
@@ -41,12 +47,16 @@
         <h2>features</h2>
         <div class="features">
             <div class="manage" id="manage apartments">
-                <img src="/frontend/static/icons8-asset-management-64.png" alt="management icon">
+<!--                 <img src="/frontend/static/icons8-asset-management-64.png" alt="management icon">
+ -->                <img src="{{url_for('static', filename='icons8-asset-management-64.png')}}" alt="management icon">
+
                 <h3>manage apartments</h3>
-                <p>This feature is for landlords who have multiple apartments. They will be able to create new apartments and add their tenants and caretakers</p>
+                <p>This feature is for landlords with multiple apartments. They will be able to create new apartments and add their tenants and caretakers</p>
             </div>
             <div class="hakiba" id="hakiba pay">
-                <img src="/frontend/static/icons8-savings-66.png" alt="savings icon">
+<!--                 <img src="/frontend/static/icons8-savings-66.png" alt="savings icon">
+ -->                <img src="{{url_for('static', filename='icons8-savings-66.png')}}" alt="savings icon">
+
                 <h3>hakiba pay</h3>
                 <p>
                     Haba na haba hujaza kibaba. This feature is designed to track payment information especially in small amounts. It will be accessible to all parties and will show the payment progress of tenants. 
@@ -57,14 +67,22 @@
 <footer class="contacts">
     <h2 >Developers</h2>
     
-    <div>
+    <div class="social-links">
         <p>Trevor Kibowen</p>
-    </div>
-    <div>
-        <a href="https://twitter.com/CatherineMamo" target="_blank">@CatherineMamo
-            <img src="https://abs.twimg.com/a/1557419637/img/t1/web_logo.png" alt="Twitter Logo" title="Follow Me on Twitter" width="64" height="64">
-        </a>
+        <a href="https://twitter.com/Trevor_kibowen?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Trevor_kibowen</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="github-button" href="https://github.com/Kibowen" aria-label="Follow @Kibowen on GitHub">Follow @Kibowen</a>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <hr>
+        <br>
         <p>Catherine Mamo</p>
+        <a href="https://twitter.com/CatherineMamo?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @CatherineMamo</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="github-button" href="https://github.com/KateM27" aria-label="Follow @KateM27 on GitHub">Follow @KateM27</a>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <a class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="catherine-mamo" data-version="v1"></a>
+        <!-- <a class="badge-base__link LI-simple-link" href="https://ke.linkedin.com/in/catherine-mamo?trk=profile-badge">Catherine Mamo</a> -->
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>    
     </div>
 </footer>
 

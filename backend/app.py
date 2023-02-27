@@ -1,7 +1,6 @@
 from flask import Flask, redirect, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 
-# from routes import *
 
 app = Flask(__name__)
 # CORS (app)
@@ -12,7 +11,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mykeja.db'
 with app.app_context():
 	db = SQLAlchemy(app)
 
-# Models
 class Tenant(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	name = db.Column(db.String(20), unique=False, nullable=False)
