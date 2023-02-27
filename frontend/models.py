@@ -8,6 +8,3 @@ class LandLord (db.Model, UserMixin):
     password = db.Column(db.String(150))
     First_name = db.Column(db.String(150))
     second_name = db.Column(db.String(150))
-    
-
-
