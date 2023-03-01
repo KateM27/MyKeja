@@ -15,16 +15,16 @@
 </head>
 <header class="header">
 <!--     <img src="{{ url_for('static', filename='mykejaweb_logo.png') }}" alt="">-->    
-<img src="{{url_for('static', filename='6-removebg-preview.png')}}" alt="mykeja_logo" width="100" height="100" class="logo">
+<img src="{{url_for('static', filename='6-removebg-preview.png')}}" alt="mykeja_logo" width="150" height="150" class="logo">
 <!-- <img src="/frontend/static/6-removebg-preview.png" alt="mykeja_logo" width="100" height="100" class="logo">
  -->
     <nav>
         <ul>
             <li>
-                <a id="signup" href="signup">signup</a>
+                <a id="signup" href="signup">Signup</a>
             </li>
             <li>
-                <a id="login" href="login">login</a>
+                <a id="login" href="login">Login</a>
             </li>
             <li>
                 <a class="github-button" href="https://github.com/KateM27/MyKeja/" aria-label="Watch KateM27/MyKeja on GitHub">Project</a>
@@ -36,7 +36,59 @@
 </header>
 <body>
 <div class="display">
-<p>my display stuff</p>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="{{url_for('static', filename='mykeja2.jpg')}}" width="700" height="500">
+            <div class="text">Landlords create their apartments and assign caretakers to each apartment.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="{{url_for('static', filename='mykeja1.png')}}" width="700" height="500">
+            <div class="text">Lanlords can add new tenants to the system as caretakers monitor their stay.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div> -->
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+<!-- <p>my display stuff</p> -->
 </div>
 <section>
     <article class="about">
