@@ -12,3 +12,8 @@ def home():
 @login_required
 def lordview():
     return render_template("landlordview.html")
+
+@views.route('/new_apartment')
+@login_required
+def new_house():
+    return render_template("landlord.html")

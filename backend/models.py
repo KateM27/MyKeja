@@ -1,4 +1,4 @@
-from app import db
+from mykeja import db
 
 class Tenant(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
