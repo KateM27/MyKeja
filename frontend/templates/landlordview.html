@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="/frontend/static/landlord.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='display.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='landlord.css') }}">
     <link rel="stylesheet" href="/frontend/static/global.css">
     <link rel="stylesheet" href="/frontend//static/display.css">
+    <link rel="stylesheet" href="/frontend/static/landlord.css">
     <link rel="icon" href="{{ url_for('static', filename='mykejaweb_50px.png') }}">
     <link rel="icon" href="/frontend/static/7-removebg-preview.png">
+    <script src="{{ url_for('static', filename = 'popup.js') }}"></script>
 </head>
 
 <header class="header">
@@ -27,10 +30,38 @@
     </nav>
 </header>
 <body>
-    <p>
-        this is what the landlord will see.
+         <section class="card_container">
+        <div class="card">
+            <div class="summary">
 
-        tenants table
-    </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="summary">
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="summary">
+
+            </div>
+        </div>
+        <div class="card">
+            <a href="{{ url_for('views.new_building') }}" class="btn btn-primary">Add New Building</a>
+        </div>
+    </section>
+    <div class="popup">
+        <form class="popup-content" action="{{ url_for('views.new_building') }}" method="POST">
+          <span class="close-btn">&times;</span>
+          <label for="building-name">Building Name:</label>
+          <input type="text" id="building-name" name="building_name" required>
+          <label for="caretaker">Caretaker:</label>
+          <input type="text" id="caretaker" name="caretaker" required>
+          <label for="tenants">Tenants:</label>
+          <input type="number" id="tenants" name="tenants" required>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+      
 </body>
 </html>
