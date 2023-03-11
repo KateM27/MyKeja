@@ -1,0 +1,233 @@
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.flashes{
+    background-color: #eed97d;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    animation: pop-in-out 0.5s ease-in-out;
+}
+
+@keyframes pop-in-out {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+img{
+    position: relative;
+    margin-right: auto;
+}
+
+.logo{
+  max-width: 100%;
+  height: auto;
+}
+
+.display{
+    background-color: #dfc23f;
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.about{
+    text-align: center;
+    width: 80%;
+    height: auto;
+}
+
+.block{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.features h2{
+    height: 20%;
+}
+.features h3{
+    font-size:20px;
+    font-weight: 800;
+
+}
+
+.manage{
+width: 20%;
+margin: 10px;
+background-color: #DFC13F;
+}
+
+.manage p{
+    width: 80%;
+    position: relative;
+    left: 11%;
+    font-size: 12px;
+}
+.hakiba{
+    width: 20%;
+    margin: 10px;
+    background-color: #DFC13F;
+}
+
+.hakiba p{
+    width: 80%;
+    
+    position: relative;
+    left: 11%;
+    font-size: 12px;
+}
+
+.contacts{
+    background-color: black;
+    padding: 10px;
+    color: #DFC13F;
+}
+.contacts h2{
+    text-align: center;
+}
+
+nav{
+    height: auto;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: right;
+    font-size: 1em;
+}
+
+li{
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+
+li a{
+    color: rgb(54, 7, 7);
+    text-decoration: none;
+}
+
+li a:hover, li a:focus {
+    text-decoration: underline;
+    color: #DFC13F;
+}
+
+.social-links {
+    float: inline-end;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* colors #DFC13F #A95534 */

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/frontend/static/landlord.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='display.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" href="/frontend/static/global.css">
+    <link rel="stylesheet" href="/frontend//static/display.css">
+    <link rel="icon" href="{{ url_for('static', filename='mykejaweb_50px.png') }}">
+    <link rel="icon" href="/frontend/static/7-removebg-preview.png">
+</head>
+
+<header class="header">
+<img src="{{url_for('static', filename='6-removebg-preview.png')}}" alt="mykeja_logo" width="150" height="150" class="logo">
+   
+    <nav>
+        <ul>
+            <li>
+                <a id="logout" href="logout">logout</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <p>
+        this is what the landlord will see.
+    </p>
+</body>
+</html>
