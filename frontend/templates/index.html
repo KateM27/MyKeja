@@ -21,7 +21,7 @@
         <div>
             <a href="{{ url_for('views.home')}}">
                 <!-- <img src="{{ url_for('static', filename= 'images/Artboard 35.png')}}" alt="mykeja_logo" class="logo"> -->
-                <img src="/frontend/static/images/Artboard 35.png" alt="mykeja_logo" class="logo">
+                <img src="{{ url_for('static', filename='images/Artboard 35.png') }}" alt="mykeja_logo" class="logo">
             </a>
         </div>
         <nav>

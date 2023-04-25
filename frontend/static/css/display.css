@@ -41,7 +41,7 @@
     color: white;
 }
 
-header section{ /* contains the logo the desciption */
+.header section{ /* contains the logo the desciption */
     width: 100%;
     height: inherit;
     display: flex;
@@ -49,7 +49,7 @@ header section{ /* contains the logo the desciption */
     flex-direction: row;
 }
 
-header section h2{
+.header section h2{
     font-size: 7rem;
     flex-basis: 100%;
     padding: 30px 30px;
@@ -110,7 +110,7 @@ img{
 .block{
     text-align: center;
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 
 .block h2{
@@ -158,12 +158,13 @@ img{
     display: flex;
     flex-direction: wrap;
     justify-content: space-between;
+    height: 100vh;
 
 }
 
 .about_img{
     width: 50%;
-    height: auto;
+    height: inherit;
     background-image: url(/frontend/static/images/pexels-gonzalo-carlos-novillo-lapeyra-12608564.jpg);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -216,3 +217,109 @@ li a:hover, li a:focus {
     #7BC6E1 - call to action
     #BFD5D5 - default white.
 */
+
+@media (min-width:800px) {
+    .nav{
+     display: flex;
+    }
+    .header section{
+        align-items: center;
+
+    }
+
+    .header section h2{
+        font-size: 12rem;
+        flex-basis: 50%;
+    }
+    
+    
+    .header section article{
+        flex-basis: 50%;
+        font-size: 1.5em;
+        text-align: justify;
+    }
+    
+    
+    .cta {
+        left: 75%;
+    }
+
+    .block{
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .block h2{
+        height: 20%;
+        text-align: center;
+        padding-top: 2em;
+    }
+    
+    .features{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    
+    .features h3{
+        font-size: 1em;
+        font-weight: 800;
+    
+    }
+    
+    .card{
+        flex-basis: 20%;
+        padding: 2em 0;
+        border-radius: 1em;
+        background-color:  #7aa7bb8e;
+        margin: 0px 2px;
+        height: 300px;
+
+    }
+    
+    .card p{
+        padding: 0 1em;
+        text-align: justify;
+        font-size: 16px;
+    }
+    
+    .about{
+        width: 100%;
+    
+    }
+    
+    .about_img{
+        width: 50%;
+        height: inherit;
+        background-image: url(/frontend/static/images/pexels-gonzalo-carlos-novillo-lapeyra-12608564.jpg);
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        background-color: rgb(0, 0, 0);
+    
+    }
+    
+    .about_article{
+        width: 50%;
+        padding: 20rem 1em;
+        font-size: 1em;
+        text-align: justify;
+    }
+    
+    
+    .contacts h2{
+        text-align: center;
+    }
+
+
+
+
+}
